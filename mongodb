@@ -1,0 +1,14 @@
+Eu criei as seguintes pastas C:\javamongodb\data
+e C:\Angular\heliot
+
+//Para executar o mongo de modo que ele veja o local onde será armazenado o dado:
+C:\Program Files\MongoDB\Server\4.4\bin>mongod --dbpath C:\javamongodb\db
+
+//Para executar o mongo entre na seguinte pasta
+C:\Program Files\MongoDB\Server\4.4\bin>mongo
+
+//https://www.javaguides.net/2019/12/spring-boot-angular-mongodb-crud-example-tutorial.html
+Para executar o node caso não lembre: 
+C:\Angular\heliot\src\app>ng serve
+
+Pronto o ambiente deve estar rodando
