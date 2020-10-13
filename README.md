@@ -57,6 +57,8 @@ http://192.168.99.100:81/
 Usuário Admin
 Senha zabbix
 
+http://177.104.61.27:81/
+
 8) Configurar um item para monitorar Zabbix:
 https://www.zabbix.com/documentation/4.4/manual/config/hosts/host#configuration
 
