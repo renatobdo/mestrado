@@ -27,8 +27,8 @@ ng serve
 
 //executa o servidor mongodb
 
-C:\Program Files\MongoDB\Server\4.4\bin>mongod
-
+C:\Program Files\MongoDB\Server\4.4\bin>mongod --dbpath C:\javamongodb\data
+Caso não consiga clicar com o botão direito do mouse no relógio e em gerenciador de tarefas. Clicar na aba serviços e procurar pelo MongoDb. Iniciá-lo.
 //executa o cliente do mongo e permite que digitemos comandos:
 
 C:\Program Files\MongoDB\Server\4.4\bin>mongo
