@@ -22,6 +22,7 @@ https://www.zabbix.com/documentation/4.4/manual/quickstart/host
 1) Abrir o prompt de comando e executar o NodeJs:
 cd C:\Angular\heliot
 ng serve
+software: https://github.com/renatobdo/heliot/blob/master/heliot.zip
 
 2) Em outro prompt executar o mongodb:
 
