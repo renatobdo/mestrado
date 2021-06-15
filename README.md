@@ -18,7 +18,7 @@ https://www.zabbix.com/documentation/4.4/manual/quickstart/host
    
    docker compose: https://docs.docker.com/compose/install/
 
-- FIWARE
+- FIWARE: https://fiware-tutorials.readthedocs.io/en/latest/
 
 # Passos para iniciar o sistema
 
