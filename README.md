@@ -74,16 +74,14 @@ vm1: 177.104.61.27 - usada para os IoT Agents XML, JSON, LoRa, UL, etc. Para vis
 # Comando manual que pode ser executado para um testes simples: 
 
 mosquitto_pub -h 177.104.61.27 -t "application/5/device/221597e4529df57d/rx" -m "{\"applicationID\":\"5\",\"applicationName\":\"application\",\"deviceName\":\"device\",\"devEUI\":\"221597e4529df57d\",\"txInfo\":{\"frequency\":868300000,\"dr\":1},\"adr\":false,\"fCnt\":0,\"fPort\":1,\"data\":\"dHN8MTYyMjAzOTA1MDk4MQ==\"}"
-
-# ts|1622039050981 = dHN8MTYyMjAzOTA1MDk4MQ==
+ts|1622039050981 = dHN8MTYyMjAzOTA1MDk4MQ== 
 
 # ou
 
 mosquitto_pub -h 177.104.61.126 -t "application/5/device/221597e4529df57d/rx" -m "{\"applicationID\":\"5\",\"applicationName\":\"application\",\"deviceName\":\"device\",\"devEUI\":\"221597e4529df57d\",\"txInfo\":{\"frequency\":868300000,\"dr\":1},\"adr\":false,\"fCnt\":0,\"fPort\":1,\"data\":\"dHN8MTYyMjAzOTA1MDk4MQ==\"}"
+ts|1622039050981 = dHN8MTYyMjAzOTA1MDk4MQ==
 
-# ts|1622039050981 = dHN8MTYyMjAzOTA1MDk4MQ==
-
-vm2: 177.104.61.119 - usada para realizar o monitoramento ou testes manuais em que consigo executar um publish no mosquitto
+vm2: 177.104.61.119 - usada para realizar testes manuais em que consigo executar um publish no mosquitto
 
 Comando para o executar senSE com 50 sensores, durante 180s e intervalo de 20s entre os envios de dados. Isso dentro da pasta home/ubuntu/SENSE:
 
