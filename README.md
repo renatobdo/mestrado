@@ -12,6 +12,7 @@ Esse sistema está sendo desenvolvido como trabalho de mestrado em ciência da c
 - Zabbix para monitoramento: 
 https://github.com/zabbix/zabbix-docker
 https://www.zabbix.com/documentation/4.4/manual/quickstart/host
+- Grafana: https://grafana.com/
 
 - Docker: https://docs.docker.com/get-started/
 - Docker compose
