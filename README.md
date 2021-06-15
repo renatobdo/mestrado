@@ -67,14 +67,15 @@ https://www.zabbix.com/documentation/4.4/manual/config/hosts/host#configuration
 
 1) Verificar se todos os containeres estão no ar nas vms da UFABC: 
  
-Comando executado para subir os containeres: docker-compose up -d
-Comando executado para parar os containeres: docker-compose stop
-Comando executado para restartar os containeres: docker-compose restart
+- Comando executado para subir os containeres: docker-compose up -d
+- Comando executado para parar os containeres: docker-compose stop
+- Comando executado para restartar os containeres: docker-compose restart
 
 vm1: 177.104.61.27 
 - usada para os IoT Agents XML, JSON, LoRa, UL, etc. Para visualizar o docker-compose.yml acesse: https://github.com/renatobdo/heliot/blob/master/docker-compose.yml_vm1
 
-vm2: 177.104.61.119 - usada para realizar testes manuais em que consigo executar um publish no mosquitto
+vm2: 177.104.61.119 
+- usada para realizar testes manuais em que consigo executar um publish no mosquitto
 
 Comando manual que pode ser executado para um teste simples na vm2: 
 
@@ -86,7 +87,8 @@ ou
 mosquitto_pub -h 177.104.61.126 -t "application/5/device/221597e4529df57d/rx" -m "{\"applicationID\":\"5\",\"applicationName\":\"application\",\"deviceName\":\"device\",\"devEUI\":\"221597e4529df57d\",\"txInfo\":{\"frequency\":868300000,\"dr\":1},\"adr\":false,\"fCnt\":0,\"fPort\":1,\"data\":\"dHN8MTYyMjAzOTA1MDk4MQ==\"}"
 ts|1622039050981 = dHN8MTYyMjAzOTA1MDk4MQ==
 
-vm3: 177.104.61.126 - usada pelo servidor LoRa. https://github.com/renatobdo/heliot/blob/master/docker-compose.yml_vm3
+vm3: 177.104.61.126 
+- usada pelo servidor LoRa. https://github.com/renatobdo/heliot/blob/master/docker-compose.yml_vm3
 
 Comando para o executar senSE com 50 sensores, durante 180s e intervalo de 20s entre os envios de dados. Isso dentro da pasta home/ubuntu/SENSE:
 
