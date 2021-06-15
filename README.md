@@ -66,6 +66,11 @@ https://www.zabbix.com/documentation/4.4/manual/config/hosts/host#configuration
 
 # Passos para realização dos testes:
 
+# Arquitetura dos testes
+
+![ArquiteturaDosTestes](https://user-images.githubusercontent.com/9336800/122129142-0c867580-ce0c-11eb-9c8c-ce613ece6ea9.png)
+
+
 1) Verificar se todos os containeres estão no ar nas vms da UFABC: 
  
 - Comando executado para subir os containeres: docker-compose up -d
@@ -75,7 +80,7 @@ https://www.zabbix.com/documentation/4.4/manual/config/hosts/host#configuration
 vm1: 177.104.61.27 
 - usada para os IoT Agents XML, JSON, LoRa, UL, etc. Para visualizar o docker-compose.yml acesse: https://github.com/renatobdo/heliot/blob/master/docker-compose.yml_vm1
 
-vm2: 177.104.61.119 
+vm2: 177.104.61.119  (Essa vm é opcional)
 - usada para realizar testes manuais em que consigo executar um publish no mosquitto
 
 Comando manual que pode ser executado para um teste simples na vm2: 
