@@ -15,7 +15,9 @@ https://www.zabbix.com/documentation/4.4/manual/quickstart/host
 - Grafana: https://grafana.com/
 
 - Docker: https://docs.docker.com/get-started/
-- Docker compose
+   
+   docker compose: https://docs.docker.com/compose/install/
+
 - FIWARE
 
 # Passos para iniciar o sistema
@@ -65,12 +67,12 @@ http://177.104.61.27:81/
 https://www.zabbix.com/documentation/4.4/manual/config/hosts/host#configuration
 
 
-# Passos para realização dos testes:
-
 # Arquitetura dos testes
 
 ![ArquiteturaDosTestes](https://user-images.githubusercontent.com/9336800/122129142-0c867580-ce0c-11eb-9c8c-ce613ece6ea9.png)
 
+
+# Passos para realização dos testes:
 
 1) Verificar se todos os containeres estão no ar nas vms: 
  
