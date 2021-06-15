@@ -71,7 +71,7 @@ https://www.zabbix.com/documentation/4.4/manual/config/hosts/host#configuration
 ![ArquiteturaDosTestes](https://user-images.githubusercontent.com/9336800/122129142-0c867580-ce0c-11eb-9c8c-ce613ece6ea9.png)
 
 
-1) Verificar se todos os containeres estão no ar nas vms da UFABC: 
+1) Verificar se todos os containeres estão no ar nas vms: 
  
 - Comando executado para subir os containeres: docker-compose up -d
 - Comando executado para parar os containeres: docker-compose stop
