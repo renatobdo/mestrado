@@ -9,6 +9,7 @@ Esse sistema está sendo desenvolvido como trabalho de mestrado em ciência da c
 - Angular
 - Java
 - MongoDb
+- MongoDb Compass
 - Zabbix para monitoramento: 
 https://github.com/zabbix/zabbix-docker
 https://www.zabbix.com/documentation/4.4/manual/quickstart/host
@@ -112,4 +113,12 @@ Para executar o NODE-Red via docker: https://nodered.org/docs/getting-started/do
 
 3) Verificar se o software que chamei de Heliot está rodando. (Veja os passos 1 a 4 dos Passos para iniciar o sistema)
 
-4) Verificar os logs. 
+4) Analisar as entidades criadas. Para isso utilizar o postman e importar os comandos para serem executados:.
+iotagentxml: https://github.com/renatobdo/heliot/blob/master/FIWARE%20XML%20Agent%20Copy%202.postman_collection.json
+iotagentjson: 
+iotagentul:
+iotagentLoRa:
+
+5) Verificar os logs da url http://localhost:4200/agentlogs na aba iot Agent redirector 
+
+6) Comparar o que foi identificado com o que foi persistido pelo cygnus/mongodb. Nesse caso estou utilizando o mongoDb Compass.
