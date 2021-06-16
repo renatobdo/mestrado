@@ -113,7 +113,7 @@ Para executar o NODE-Red via docker: https://nodered.org/docs/getting-started/do
 
 3) Verificar se o software que chamei de Heliot está rodando. (Veja os passos 1 a 4 dos Passos para iniciar o sistema)
 
-4) Analisar as entidades criadas. Para isso utilizar o postman e importar os comandos para serem executados:.
+4) Analisar se as entidades foram criadas. Para isso utilizar o postman e importar os comandos para serem executados:
 iotagentxml: https://github.com/renatobdo/heliot/blob/master/FIWARE%20XML%20Agent%20Copy%202.postman_collection.json
 iotagentjson: 
 iotagentul:
