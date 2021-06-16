@@ -102,7 +102,7 @@ ts|1622039050981 = dHN8MTYyMjAzOTA1MDk4MQ==
 vm3: 177.104.61.126 
 - usada pelo servidor LoRa. https://github.com/renatobdo/heliot/blob/master/docker-compose.yml_vm3
 
-Comando para o executar senSE com 50 sensores, durante 180s e intervalo de 20s entre os envios de dados. Isso dentro da pasta home/ubuntu/SENSE:
+Comando para executar o senSE com 50 sensores, durante 180s e intervalo de 20s entre os envios de dados. Isso dentro da pasta home/ubuntu/SENSE:
 
 java -jar SenSE.jar -sensor 50 -rep 1 -time 180 - p 20 -h tcp://177.104.61.126:1883 -sensorType lora -temp -netkey 9c698235533b8865900aee3558dfc47b -appkey b73485bb9c5e29a2c8b6a330f0bf2ed3 -mac 000000ffff001000 -devAddress 00fb0bc1
 
