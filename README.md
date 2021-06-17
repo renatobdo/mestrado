@@ -1,4 +1,6 @@
-# Bem vindo ao sistema para redução da heterogeneidade de dados em aplicações IoT.
+# Heliot - Heterogeneity less in IoT
+
+Bem vindo ao sistema para redução da heterogeneidade de dados em aplicações IoT. Esse sistema foi desenvolvido como tese de mestrado em ciência da computação na UFABC
 
 ## Ferramentas necessárias:
 
@@ -45,3 +47,15 @@ https://www.postman.com/
 6) Executar o Node-Red para simulação via docker. O fluxo utilizado pode ser encontrado em 
 
 7) Estava utilizando o zabbix e o google para realizar o monitoramento, porém estou analisando o grafana
+
+
+# Arquitetura dos testes
+
+![ArquiteturaDosTestes](https://user-images.githubusercontent.com/9336800/122453049-4d9f9680-cf80-11eb-88ac-abeacc6a8611.png)
+
+Passos para executar os testes
+
+1) É necessário possuir os fluxos para geração dos dados: 
+
+2) 
+
