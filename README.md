@@ -1,6 +1,6 @@
 # Heliot - Heterogeneity less in IoT
 
-Bem vindo ao sistema para redução da heterogeneidade de dados em aplicações IoT. Esse sistema foi desenvolvido como tese de mestrado em ciência da computação na UFABC
+Bem vindo ao sistema para redução da heterogeneidade de dados em aplicações IoT. Esse sistema foi desenvolvido como dissertação de mestrado em ciência da computação na UFABC
 
 ## Ferramentas necessárias:
 
