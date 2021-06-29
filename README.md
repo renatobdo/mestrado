@@ -54,11 +54,11 @@ https://www.postman.com/
 ![ArquiteturaDosTestes](https://user-images.githubusercontent.com/9336800/122453049-4d9f9680-cf80-11eb-88ac-abeacc6a8611.png)
 
 São utilizadas 2 máquinas virtuais:
-vm1: 177.104.61.27 em que estão os IoT Agents LoRa, UL, Json, XML, etc
+vm2: 177.104.61.27 em que estão os IoT Agents LoRa, UL, Json, XML, etc
 
 docker-compose.yml está em https://github.com/renatobdo/heliot/blob/master/docker-compose.yml_vm1
 
-vm2: 177.104.61.126 em que está o servidor LoRA para geração de dados em formato base64
+vm1: 177.104.61.126 em que está o servidor LoRA para geração de dados em formato base64
 
 docker-compose.yml https://github.com/renatobdo/heliot/blob/master/docker-compose.yml_vm3
 
