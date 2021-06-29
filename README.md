@@ -81,10 +81,16 @@ Para um teste manual pode ser utilizado um publish via mosquitto. Eu estou usand
 mosquitto_pub -h 177.104.61.126 -t "application/5/device/221597e4529df57d/rx" -m "{\"applicationID\":\"5\",\"applicationName\":\"application\",\"deviceName\":\"device\",\"devEUI\":\"221597e4529df57d\",\"txInfo\":{\"frequency\":868300000,\"dr\":1},\"adr\":false,\"fCnt\":0,\"fPort\":1,\"data\":\"dHN8MTYyMjAzOTA1MDk4MQ==\"}"
 ts|1622039050981 = dHN8MTYyMjAzOTA1MDk4MQ==
 
+mosquitto_pub -h 177.104.61.126 -t "application/5/device/221597e4529df57d/rx" -m "{\ "applicationID\ ":\ "5\ ",\ "applicationName\ ":\ "application\ ",\ "deviceName\ ":\ "device\ ",\ "devEUI\ ":\ "221597e4529df57d\ ",\ "txInfo\ ":{\ "frequency\ ":868300000,\ "dr\ ":1},\ "adr\ ":false,\ "fCnt\ ":0,\ "fPort\ ":1,\ "data\ ":\ "dHN8MTYyMjAzOTA1MDk4MQ==\ "}"
+
 ou
 
 mosquitto_pub -h 177.104.61.27 -t "application/5/device/221597e4529df57d/rx" -m "{\"applicationID\":\"5\",\"applicationName\":\"application\",\"deviceName\":\"device\",\"devEUI\":\"221597e4529df57d\",\"txInfo\":{\"frequency\":868300000,\"dr\":1},\"adr\":false,\"fCnt\":0,\"fPort\":1,\"data\":\"dHN8MTYyMjAzOTA1MDY4MQ==\"}"
 ts|1622039050681 = dHN8MTYyMjAzOTA1MDY4MQ==
+
+obs.: Não se esqueça de retirar os espaços entre a barra e as aspas duplas
+
+mosquitto_pub -h 177.104.61.27 -t "application/5/device/221597e4529df57d/rx" -m "{\ "applicationID\ ":\ "5\ ",\ "applicationName\ ":\ "application\ ",\ "deviceName\ ":\ "device\ ",\ "devEUI\ ":\ "221597e4529df57d\ ",\ "txInfo\ ":{\ "frequency\ ":868300000,\ "dr\ ":1},\ "adr\ ":false,\ "fCnt\ ":0,\ "fPort\ ":1,\ "data\ ":\ "dHN8MTYyMjAzOTA1MDY4MQ==\ "}"
 
 3) Verificar os logs no frontend do Heliot ou no MongoDB Compass.
 
