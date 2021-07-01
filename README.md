@@ -64,6 +64,11 @@ docker-compose.yml https://github.com/renatobdo/heliot/blob/master/docker-compos
 
 2 notebooks foram utilizados um com Ubuntu e outro com o Windows 10. No Ubuntu foi instalado o Node-Red e no Windows 10 o Iot Redirector e o Heliot.
 
+
+## Cenário dos testes
+
+https://docs.google.com/spreadsheets/d/1NVP1pvPBCw29xQ5PDzMr0tMPG5Xhfww95qH1ZccwvqY/edit#gid=0
+
 ## Passos para executar os testes
 
 1) É necessário possuir os fluxos para geração dos dados: https://github.com/renatobdo/heliot/blob/master/flows.json
