@@ -67,7 +67,7 @@ docker-compose.yml https://github.com/renatobdo/heliot/blob/master/docker-compos
 
 ## Cenário dos testes
 
-https://docs.google.com/spreadsheets/d/1NVP1pvPBCw29xQ5PDzMr0tMPG5Xhfww95qH1ZccwvqY/edit#gid=0
+https://docs.google.com/spreadsheets/d/1NVP1pvPBCw29xQ5PDzMr0tMPG5Xhfww95qH1ZccwvqY/edit?usp=sharing
 
 ## Passos para executar os testes
 
