@@ -76,7 +76,7 @@ https://www.postman.com/
 
 6) Executar o IoT Redirector. Entre no projeto paho-publish-subscribe-master e procure a classe Subscriber e execute como java application. Ao executar uma mensagem será mostrada: Subscriber is now listening to #
 
-7) Executar o Node-Red para simulação via docker. O fluxo utilizado pode ser encontrado em 
+7) Executar o Node-Red para simulação via docker. O fluxo utilizado pode ser encontrado em https://github.com/renatobdo/mestrado/blob/defesa/flows.json
 
 8) Estava utilizando o zabbix e o google para realizar o monitoramento, porém estou analisando o grafana: http://177.104.61.27:3003/login
 
