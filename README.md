@@ -42,11 +42,44 @@ https://www.postman.com/
 
 4) Executar o sistema heliot2 que fará a ligação do frontend com o backend no eclipse. Para isso procure a classe Application e clique com o botão direito run as Java Application. Para visualizar a página web acesse: http://localhost:4200/agentlogs
 
-5) Executar o IoT Redirector. Entre no projeto paho-publish-subscribe-master e procure a classe Subscriber e execute como java application. Ao executar uma mensagem será mostrada: Subscriber is now listening to #
+5) Logar nas vms: 
+ vm1: 177.104.61.126 em que está o servidor LoRA para geração de dados em formato base64
+   # comandos necessários: sudo su
+    cd /home/ubuntu/lorac
+    docker-compose up -d
+    root@sense:/home/ubuntu/lorac# docker ps
+CONTAINER ID        IMAGE                              COMMAND                  CREATED             STATUS              PORTS                    NAMES
+3ff37b3d2e87        loraserver/lora-geo-server:2       "./lora-geo-server"      3 months ago        Up 6 days                                    lorac_geoserver_1
+e4b6b319ea97        redis:4-alpine                     "docker-entrypoint.s…"   3 months ago        Up 6 days           0.0.0.0:6379->6379/tcp   lorac_redis_1
+d6abfabd879f        postgres:9.6-alpine                "docker-entrypoint.s…"   3 months ago        Up 6 days           5432/tcp                 lorac_postgresql_1
+96933d9dd73b        loraserver/lora-gateway-bridge:2   "./lora-gateway-brid…"   3 months ago        Up 6 days           0.0.0.0:1700->1700/udp   lorac_gatewaybridge_1
+e022bfce1f59        loraserver/lora-app-server:2       "./lora-app-server"      3 months ago        Up 6 days           0.0.0.0:8080->8080/tcp   lorac_appserver_1
+cc902af52bd0        loraserver/loraserver:2            "./loraserver"           3 months ago        Up 6 days                                    lorac_loraserver_1
 
-6) Executar o Node-Red para simulação via docker. O fluxo utilizado pode ser encontrado em 
+ vm2: 177.104.61.27 em que estão os IoT Agents LoRa, UL, Json, XML, etc
+   # comandos necessários: sudo su
+   cd /home/ubuntu/testes/swamp-iot-agent
+   docker-compose up -d
+   root@renatoteste:/home/ubuntu/testes/swamp-iot-agent# docker ps
+CONTAINER ID        IMAGE                                    COMMAND                  CREATED             STATUS                      PORTS                                                                NAMES
+37f8a860c2f3        grafana/grafana                          "/run.sh"                25 minutes ago      Up 24 minutes               0.0.0.0:3003->3000/tcp                                               swamp-iot-agent_grafana_1_2c7200c2ef30
+5a2f1dafcd36        smartsdk/quantumleap                     "/bin/sh -c 'python …"   25 minutes ago      Up 24 minutes               0.0.0.0:8668->8668/tcp                                               fiware-quantum-leap
+cc46f3e9d9ba        fiware/cygnus-ngsi:latest                "/cygnus-entrypoint.…"   25 minutes ago      Up 24 minutes               0.0.0.0:5050->5050/tcp, 0.0.0.0:5080->5080/tcp                       fiware-cygnus
+4ceea007e45d        fiware/iotagent-ul:1.16.0-distroless     "/nodejs/bin/node ./…"   25 minutes ago      Up 24 minutes (healthy)     4061/tcp, 0.0.0.0:4043->4043/tcp, 0.0.0.0:7898->7898/tcp, 7896/tcp   fiware-iot-agentul
+0bdcb19edcb4        fiware/orion:2.0.0                       "/usr/bin/contextBro…"   25 minutes ago      Up 24 minutes               0.0.0.0:1026->1026/tcp                                               fiware-orion
+eb68b129d7c3        fiware/iotagent-json:1.17.0-distroless   "/nodejs/bin/node ./…"   25 minutes ago      Up 24 minutes (healthy)     4041/tcp, 0.0.0.0:4042->4042/tcp, 7896/tcp, 0.0.0.0:7897->7897/tcp   fiware-iot-agentjson
+b7e5064e3050        fiware/iotagent-xml                      "docker-entrypoint.s…"   25 minutes ago      Up 24 minutes (unhealthy)   0.0.0.0:4041->4041/tcp, 0.0.0.0:7896->7896/tcp                       fiware-iot-agentxml
+a749154ed156        crate/crate                              "/docker-entrypoint.…"   25 minutes ago      Up 24 minutes               0.0.0.0:4200->4200/tcp, 0.0.0.0:4300->4300/tcp, 5432/tcp             db-crate
+7f32810fc644        swamp-iot-agent_iot-agent                "docker-entrypoint.s…"   25 minutes ago      Up 24 minutes               0.0.0.0:3456->3456/tcp                                               iot-agent-lora
+3299f1055ecb        eclipse-mosquitto                        "/docker-entrypoint.…"   25 minutes ago      Up 25 minutes               0.0.0.0:1883->1883/tcp, 0.0.0.0:9001->9001/tcp                       mosquitto
+4dbf02524085        mongo:3.6                                "docker-entrypoint.s…"   25 minutes ago      Up 25 minutes               0.0.0.0:27017->27017/tcp                                             db-mongo
 
-7) Estava utilizando o zabbix e o google para realizar o monitoramento, porém estou analisando o grafana
+
+6) Executar o IoT Redirector. Entre no projeto paho-publish-subscribe-master e procure a classe Subscriber e execute como java application. Ao executar uma mensagem será mostrada: Subscriber is now listening to #
+
+7) Executar o Node-Red para simulação via docker. O fluxo utilizado pode ser encontrado em 
+
+8) Estava utilizando o zabbix e o google para realizar o monitoramento, porém estou analisando o grafana: http://177.104.61.27:3003/login
 
 
 # Arquitetura dos testes
