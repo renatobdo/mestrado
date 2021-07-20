@@ -48,6 +48,7 @@ https://www.postman.com/
 
 5) Logar nas vms: 
  vm1: 177.104.61.126 em que está o servidor LoRA para geração de dados em formato base64
+ 
     comandos necessários: sudo su
     
     cd /home/ubuntu/lorac
@@ -62,6 +63,7 @@ https://www.postman.com/
 
 
  vm2: 177.104.61.27 em que estão os IoT Agents LoRa, UL, Json, XML, etc
+ 
    comandos necessários: sudo su
    
    cd /home/ubuntu/testes/swamp-iot-agent
