@@ -42,22 +42,34 @@ https://www.postman.com/
 
 4) Executar o sistema heliot2 que fará a ligação do frontend com o backend no eclipse. Para isso procure a classe Application e clique com o botão direito run as Java Application. Para visualizar a página web acesse: http://localhost:4200/agentlogs
 
+![Heliot](https://user-images.githubusercontent.com/9336800/126373749-b9eebe64-8561-47ae-a9ca-8f4a88b932c4.png)
+
+
+
 5) Logar nas vms: 
  vm1: 177.104.61.126 em que está o servidor LoRA para geração de dados em formato base64
-   ## comandos necessários: sudo su
+    comandos necessários: sudo su
+    
     cd /home/ubuntu/lorac
+    
     docker-compose up -d
+    
     root@sense:/home/ubuntu/lorac# docker ps
+    
     
 ![dockerPS](https://user-images.githubusercontent.com/9336800/126373347-31cad8a8-75ab-4147-862c-fb34bb68d39b.png)
 
 
 
  vm2: 177.104.61.27 em que estão os IoT Agents LoRa, UL, Json, XML, etc
-   ## comandos necessários: sudo su
+   comandos necessários: sudo su
+   
    cd /home/ubuntu/testes/swamp-iot-agent
+   
    docker-compose up -d
+   
    root@renatoteste:/home/ubuntu/testes/swamp-iot-agent# docker ps
+   
    
 ![dockerPS2](https://user-images.githubusercontent.com/9336800/126373445-f6c9e7de-338e-45b0-9b24-ba2872bceda1.png)
 
