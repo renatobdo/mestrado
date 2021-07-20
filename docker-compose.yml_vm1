@@ -217,7 +217,7 @@ services:
     ports:
       - "3003:3000"
     environment:
-      - GF_INSTALL_PLUGINS=crate-datasource,grafana-clock-panel,grafana-worldmap-panel
+      - GF_INSTALL_PLUGINS=https://github.com/orchestracities/grafana-map-plugin/archive/master.zip;grafana-map-plugin,grafana-clock-panel,grafana-worldmap-panel
 
   cygnus:
     image: fiware/cygnus-ngsi:latest
@@ -247,4 +247,3 @@ networks:
 volumes:
   mongo-db:
   cratedb:
-     
