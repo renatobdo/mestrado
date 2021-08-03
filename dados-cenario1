@@ -4,14 +4,14 @@
 3) elemento faltante na tag: key, measure device, t
 4) elemento sem aspas
 Exemplos:
-"<measure dev=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\">", 
-"<measure device=\"dht22\" k=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\">", 
-"<measure device=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><temp value=\"20.45\">", 
+"<measure dev=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\" />", 
+"<measure device=\"dht22\" k=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\" />", 
+"<measure device=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><temp value=\"20.45\" />", 
 "<measure device=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\"",
-"<measure device=\"dht22\"><t value=\"20.45\">",
-"<key=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\">",
-"<measure device=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><value=\"20.45\">",
-"<measure device=\"dht22\><t value=\"20.45\">",
+"<measure device=\"dht22\"><t value=\"20.45\" />",
+"<key=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\" />",
+"<measure device=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><value=\"20.45\" />",
+"<measure device=\"dht22\><t value=\"20.45\" />",
 
 
 ## erros deliberados no HTML:
