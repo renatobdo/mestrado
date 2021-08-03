@@ -1,14 +1,17 @@
 ## erros deliberados no arquivo xml: 
-1) elemento da tag abreviada: measure dev ao invés de measure device, k ao invés de key, temp ao invés de t;
+1) elemento da tag abreviada ou incorreta: measure dev ao invés de measure device, k ao invés de key, temp ao invés de t;
 2) tag sem fechamento final,
-3) elemento faltante na tag: key
+3) elemento faltante na tag: key, measure device, t
 4) elemento sem aspas
 Exemplos:
 "<measure dev=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\">", 
 "<measure device=\"dht22\" k=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\">", 
-"<measure device=\"dht22\" k=\"4jggokgpepnvsb2uv4s40d59ov\"><temp value=\"20.45\">", 
+"<measure device=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><temp value=\"20.45\">", 
+
 "<measure device=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\"",
 "<measure device=\"dht22\"><t value=\"20.45\">",
+"<key=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\">",
+"<measure device=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><value=\"20.45\">",
 "<measure device=\"dht22\><t value=\"20.45\">",
 
 
