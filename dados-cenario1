@@ -3,12 +3,7 @@
 2) tag sem fechamento final,
 3) elemento faltante na tag: key
 4) elemento sem aspas
-
-## erros deliberados no LoRa:
-1) Elemento incorreto: applicationI ao invés de applicationID, applicationNam ao invés de applicationName, devName ao invés de deviceName, devEI ao invés de devEUI,
-gateway ao invés de gatewayID
-2) Elemento faltando no JSON LoRa: applicationID, applicationName, deviceName, devEUI, gatewayID, name, data  
-
+Exemplos:
 "<measure dev=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\">", 
 "<measure device=\"dht22\" k=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\">", 
 "<measure device=\"dht22\" k=\"4jggokgpepnvsb2uv4s40d59ov\"><temp value=\"20.45\">", 
@@ -16,6 +11,35 @@ gateway ao invés de gatewayID
 "<measure device=\"dht22\"><t value=\"20.45\">",
 "<measure device=\"dht22\><t value=\"20.45\">",
 
+
+## erros deliberados no HTML:
+1) Dado sem elementos como: <!DOCTYPE html>, title
+2) Dado sem tag de fechamento
+Exemplos:
+<div title=Current Temperature>13C</div>
+<!DOCTYPE html><div>13C</div>
+<!DOCTYPE html><div title=Current Temperature>13C
+
+# erros deliberados no JSON:
+1) Elementos faltantes: t, {, } , :
+Exemplos:
+t:12.71}
+{:12.71}
+{t12.71}
+{t:12.71
+
+#erros deliberados no UL
+1) Elementos faltantes: t, |, temperatura
+Exemplos:
+|12.55
+t|
+t12.55
+
+## erros deliberados no LoRa:
+1) Elemento incorreto: applicationI ao invés de applicationID, applicationNam ao invés de applicationName, devName ao invés de deviceName, devEI ao invés de devEUI,
+gateway ao invés de gatewayID
+2) Elemento faltando no JSON LoRa: applicationID, applicationName, deviceName, devEUI, gatewayID, name, data  
+Exemplos:
 "{applicationI:5,applicationName:mestrado_simulacao,deviceName:DHT11,devEUI:221597e4529df57d,rxInfo:[{gatewayID:000000ffff001000,name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
 "{applicationID:5,applicationNam:mestrado_simulacao,deviceName:DHT11,devEUI:221597e4529df57d,rxInfo:[{gatewayID:000000ffff001000,name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
 "{applicationID:5,applicationName:mestrado_simulacao,devName:DHT11,devEUI:221597e4529df57d,rxInfo:[{gatewayID:000000ffff001000,name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
