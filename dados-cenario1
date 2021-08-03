@@ -1,0 +1,30 @@
+## erros deliberados no arquivo xml: 
+1) elemento da tag abreviada: measure dev ao invés de measure device, k ao invés de key, temp ao invés de t;
+2) tag sem fechamento final,
+3) elemento faltante na tag: key
+4) elemento sem aspas
+
+## erros deliberados no LoRa:
+1) Elemento incorreto: applicationI ao invés de applicationID, applicationNam ao invés de applicationName, devName ao invés de deviceName, devEI ao invés de devEUI,
+gateway ao invés de gatewayID
+2) Elemento faltando no JSON LoRa: applicationID, applicationName, deviceName, devEUI, gatewayID, name, data  
+
+"<measure dev=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\">", 
+"<measure device=\"dht22\" k=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\">", 
+"<measure device=\"dht22\" k=\"4jggokgpepnvsb2uv4s40d59ov\"><temp value=\"20.45\">", 
+"<measure device=\"dht22\" key=\"4jggokgpepnvsb2uv4s40d59ov\"><t value=\"20.45\"",
+"<measure device=\"dht22\"><t value=\"20.45\">",
+"<measure device=\"dht22\><t value=\"20.45\">",
+
+"{applicationI:5,applicationName:mestrado_simulacao,deviceName:DHT11,devEUI:221597e4529df57d,rxInfo:[{gatewayID:000000ffff001000,name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
+"{applicationID:5,applicationNam:mestrado_simulacao,deviceName:DHT11,devEUI:221597e4529df57d,rxInfo:[{gatewayID:000000ffff001000,name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
+"{applicationID:5,applicationName:mestrado_simulacao,devName:DHT11,devEUI:221597e4529df57d,rxInfo:[{gatewayID:000000ffff001000,name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
+"{applicationID:5,applicationName:mestrado_simulacao,deviceName:DHT11,devEI:221597e4529df57d,rxInfo:[{gatewayID:000000ffff001000,name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
+"{applicationID:5,applicationName:mestrado_simulacao,deviceName:DHT11,devEUI:221597e4529df57d,rxInfo:[{gateway:000000ffff001000,name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
+"{applicationName:mestrado_simulacao,deviceName:DHT11,devEUI:221597e4529df57d,rxInfo:[{gatewayID:000000ffff001000,name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
+"{applicationID:5,deviceName:DHT11,devEUI:221597e4529df57d,rxInfo:[{gatewayID:000000ffff001000,name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
+"{applicationID:5,applicationName:mestrado_simulacao,devEUI:221597e4529df57d,rxInfo:[{gatewayID:000000ffff001000,name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
+"{applicationID:5,applicationName:mestrado_simulacao,deviceName:DHT11,rxInfo:[{gatewayID:000000ffff001000,name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
+"{applicationID:5,applicationName:mestrado_simulacao,deviceName:DHT11,devEUI:221597e4529df57d,rxInfo:[{name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
+"{applicationID:5,applicationName:mestrado_simulacao,deviceName:DHT11,devEUI:221597e4529df57d,rxInfo:[{gatewayID:000000ffff001000,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1,data:dHN8MTYyNjk3OTc0OTgwNA==}",
+"{applicationID:5,applicationName:mestrado_simulacao,deviceName:DHT11,devEUI:221597e4529df57d,rxInfo:[{gatewayID:000000ffff001000,name:ExpGW,rssi:-57,loRaSNR:7,location:{latitude:0,longitude:0,altitude:0}}],txInfo:{frequency:915000000,dr:5},adr:false,fCnt:0,fPort:1}",
