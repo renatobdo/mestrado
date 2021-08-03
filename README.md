@@ -32,6 +32,14 @@ https://docs.docker.com/compose/install/
 * Postman
 https://www.postman.com/
 
+* Fiware
+https://fiware-tutorials.readthedocs.io/en/latest/time-series-data.html
+
+* Grafana
+https://grafana.com/
+http://177.104.61.27:3003/login
+
+
 ## Para iniciar o sistema siga os passos abaixo:
 
 1) Abrir o prompt de comando e entrar na pasta C:\Angular\heliot digitar ng serve
