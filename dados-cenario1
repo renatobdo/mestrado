@@ -30,7 +30,7 @@ Exemplos:
 "{:\"12.71\"}",
 "{\"t\"\"12.71\"}",
 "{\"t\":\"12.71\",
-"{\"temp\":\"12.71\"}"
+"{\"tempe\":\"12.71\"}"
 
 #erros deliberados no UL
 1) Elementos faltantes: t, |, temperatura
