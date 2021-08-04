@@ -14,6 +14,10 @@ https://www.javaguides.net/2020/06/free-spring-boot-angular-open-source-projects
 * Mongodb Compass
 https://www.mongodb.com/products/compass
 
+* CrateDB
+http://177.104.61.27:4200/
+https://crate.io/docs/crate/tutorials/en/latest/generate-time-series/cli.html
+
 * Nodejs
 
 * Angular
