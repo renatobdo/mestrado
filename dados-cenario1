@@ -34,10 +34,12 @@ Exemplos:
 
 #erros deliberados no UL
 1) Elementos faltantes: t, |, temperatura
+2) Elementos inválidos: tempo em vez de t
 Exemplos:
 "|12.55",
 "t|",
 "t12.55",
+"tempo|12.55"
 
 ## erros deliberados no LoRa:
 1) Elemento incorreto: applicationI ao invés de applicationID, applicationNam ao invés de applicationName, devName ao invés de deviceName, devEI ao invés de devEUI,
