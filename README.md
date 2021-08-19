@@ -94,11 +94,6 @@ http://177.104.61.27:3003/login
 
 8) Estava utilizando o zabbix e o google para realizar o monitoramento, porém estou analisando o grafana: http://177.104.61.27:3003/login
 
-# Diagrama de Classes
-
-![RedirecionadorUML](https://user-images.githubusercontent.com/9336800/129456655-f8d40d48-7701-4677-a17d-5c9269f69748.jpg)
-
-
 # Arquitetura dos testes
 
 ![ArquiteturaDosTestes](https://user-images.githubusercontent.com/9336800/122453049-4d9f9680-cf80-11eb-88ac-abeacc6a8611.png)
