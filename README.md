@@ -47,6 +47,7 @@ http://177.104.61.27:3003/login
 
 
 ## Para iniciar o sistema siga os passos abaixo:
+Obs.: O nome do sistema é Heliot acrônimo para Heterogeneity less in IoT - obviamente é um nome muito ambicioso para o que o sistema se propôe mas ficou um nome legal...
 
 1) Abrir o prompt de comando e entrar na pasta C:\Angular\heliot digitar ng serve
 
