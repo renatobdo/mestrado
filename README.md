@@ -1,4 +1,4 @@
-# Redirecionador de dados heterogêneos para aplicações IoT
+# Gerenciamento de dados heterogêneos para aplicações IoT
 
    Bem vindo ao sistema para redirecionamento de dados de sensores heterogêneos. O objetivo desse sistema é simular o envio de dados através de diversos sensores de ambientes IoT, analisar o conteúdo/assinatura da mensagem, filtrá-la e redirecioná-la para um Iot Agent responsável pelo seu processamento. Utilizou-se o protocolo MQTT para envio de dados e o padrão REST para redirecionamento. Um Agente genérico (redirecionador) é capaz de entender o dado com aplicação de filtros podendo encaminhar esse dado de forma inteligente. A diminuição da heterogeneidade em aplicações baseada em sensores IoT seria uma das consequências possibilitando maior integração e interoperabilidade entre sistemas. Desenvolvido como dissertação de mestrado em ciência da computação da Universidade Federal do ABC - UFABC com orientação do professor Dr. Carlos Alberto Kamienski.
 
