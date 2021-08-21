@@ -9,10 +9,22 @@ MQTT, REST, padrão publish/subscribe, FIWARE, IoT Agent, Interoperabilidade, He
 
 ## Ferramentas necessárias:
 
+Front end: 
+
+* Angular
+
+* Nodejs
+
+Back end:
+
 * Java
 https://www.javaguides.net/2019/12/spring-boot-angular-mongodb-crud-example-tutorial.html
 https://www.javaguides.net/2019/12/spring-boot-mongodb-crud-example-tutorial.html
 https://www.javaguides.net/2020/06/free-spring-boot-angular-open-source-projects-github.html
+
+* Maven
+
+Banco de dados:
 
 * Mongodb
 
@@ -23,12 +35,15 @@ https://www.mongodb.com/products/compass
 http://177.104.61.27:4200/
 https://crate.io/docs/crate/tutorials/en/latest/generate-time-series/cli.html
 
-* Nodejs
+IDE
 
-* Angular
+* Eclipse
 
-* Node-Red
-https://nodered.org/docs/getting-started/docker
+* Postman
+https://www.postman.com/
+
+
+Infraestrutura
 
 * Docker
 https://docs.docker.com/engine/install/ubuntu/
@@ -36,10 +51,8 @@ https://docs.docker.com/engine/install/ubuntu/
 * Docker-compose
 https://docs.docker.com/compose/install/
 
-* Eclipse
-
-* Postman
-https://www.postman.com/
+* Node-Red
+https://nodered.org/docs/getting-started/docker
 
 * Fiware
 https://fiware-tutorials.readthedocs.io/en/latest/time-series-data.html
@@ -47,6 +60,12 @@ https://fiware-tutorials.readthedocs.io/en/latest/time-series-data.html
 * Grafana
 https://grafana.com/
 http://177.104.61.27:3003/login
+
+Sistema Operacional:
+
+Ubuntu
+
+Windows 10
 
 
 ## Para iniciar o sistema siga os passos abaixo:
