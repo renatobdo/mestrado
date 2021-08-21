@@ -11,7 +11,7 @@ MQTT, REST, padrão publish/subscribe, FIWARE, IoT Agent, Interoperabilidade, He
 
 Front end: 
 
-* Angular
+* Angular: https://www.javaguides.net/2020/06/free-spring-boot-angular-open-source-projects-github.html
 
 * Nodejs
 
@@ -20,7 +20,6 @@ Back end:
 * Java
 https://www.javaguides.net/2019/12/spring-boot-angular-mongodb-crud-example-tutorial.html
 https://www.javaguides.net/2019/12/spring-boot-mongodb-crud-example-tutorial.html
-https://www.javaguides.net/2020/06/free-spring-boot-angular-open-source-projects-github.html
 
 * Maven
 
@@ -61,11 +60,11 @@ https://fiware-tutorials.readthedocs.io/en/latest/time-series-data.html
 https://grafana.com/
 http://177.104.61.27:3003/login
 
-Sistema Operacional:
+Sistemas Operacionais:
 
-Ubuntu
+* Ubuntu
 
-Windows 10
+* Windows 10
 
 
 ## Para iniciar o sistema siga os passos abaixo:
