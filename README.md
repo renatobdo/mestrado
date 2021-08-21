@@ -1,7 +1,8 @@
-# Iot Agent Redirector
+# Redirecionador de dados heterogêneos para aplicações IoT
 
-   Bem vindo ao sistema para redirecionamento de dados de sensores heterogêneos. O objetivo desse sistema é simular o envio de dados através de sensores, analisar o conteúdo da mensagem, filtrá-la e redirecioná-la para um Iot Agent responsável pelo seu processamento. Com isso, pretende-se criar um Agente genérico capaz de entender o dado e redirecioná-lo de forma inteligente. A diminuição da heterogeneidade em aplicações baseada em sensores IoT seria uma das consequências possibilitando maior integração entre sistemas. Desenvolvido como dissertação de mestrado em ciência da computação da Universidade Federal do ABC - UFABC com orientação do professor Dr. Carlos Alberto Kamienski.
+   Bem vindo ao sistema para redirecionamento de dados de sensores heterogêneos. O objetivo desse sistema é simular o envio de dados através de diversos sensores de ambientes IoT, analisar o conteúdo/assinatura da mensagem, filtrá-la e redirecioná-la para um Iot Agent responsável pelo seu processamento. Utilizou-se o protocolo MQTT para envio de dados e o padrão REST para redirecionamento. Um Agente genérico é capaz de entender o dado com aplicação de filtros podendo encaminhar esse dado de forma inteligente. A diminuição da heterogeneidade em aplicações baseada em sensores IoT seria uma das consequências possibilitando maior integração e interoperabilidade entre sistemas. Desenvolvido como dissertação de mestrado em ciência da computação da Universidade Federal do ABC - UFABC com orientação do professor Dr. Carlos Alberto Kamienski.
 
+![RedirecionadorUML-Fluxograma - visão geral](https://user-images.githubusercontent.com/9336800/130318257-c049071a-a01c-427f-8f97-8fb306f4c0bb.jpg)
 
 
 ## Ferramentas necessárias:
