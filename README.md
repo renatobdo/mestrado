@@ -22,6 +22,8 @@ https://www.javaguides.net/2019/12/spring-boot-angular-mongodb-crud-example-tuto
 https://www.javaguides.net/2019/12/spring-boot-mongodb-crud-example-tutorial.html
 
 * Maven
+https://maven.apache.org/download.cgi
+https://maven.apache.org/install.html
 
 Banco de dados:
 
