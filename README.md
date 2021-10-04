@@ -25,6 +25,9 @@ https://www.javaguides.net/2019/12/spring-boot-mongodb-crud-example-tutorial.htm
 https://maven.apache.org/download.cgi
 https://maven.apache.org/install.html
 
+* Simulador SenSE
+https://github.com/ivanzy/SenSE-Sensor-Simulation-Environment
+
 Banco de dados:
 
 * Mongodb
