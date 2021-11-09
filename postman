@@ -1,0 +1,64 @@
+## JSON:
+
+## GET simples:
+
+curl --location --request GET 'http://177.104.61.121:4042/iot/about'
+
+## Criação de grupo de devices json:
+
+curl --location --request POST 'http://177.104.61.121:4042/iot/services' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+ "services": [
+   {
+     "apikey":      "4jggokgpepnvsb2uv4s40d59ov",
+     "cbroker":     "http://orion:1026",
+     "entity_type": "Thing",
+     "resource":    "/iot/json",
+     "trust": "08ca25ba8ea0f322f50244c413fce2e32feed43d"
+   }
+ ]
+}'
+
+## Criação de device json:
+
+curl --location --request POST 'http://177.104.61.121:4042/iot/devices' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+ "devices": [
+   {
+     "device_id":   "dht22",
+     "entity_name": "urn:ngsi-ld:Tempjson:001",
+     "entity_type": "Thing",
+     "timezone":    "America/Sao_Paulo",
+     "attributes": [
+       { "object_id": "t", "name":"temp", "type":"Number"},
+        { "object_id": "ti", "name":"ti", "type":"Text"},
+         { "object_id": "ts", "name":"ts", "type":"Number"}
+      ]
+   }
+ ]
+}
+'
+## Dummy device
+
+curl --location --request POST 'http://177.104.61.121:7897/iot/json?k=4jggokgpepnvsb2uv4s40d59ov&i=dht22j' \
+--header 'Content-Type: application/json' \
+--data-raw '{"t": "20","ti":"JSON", "ts":"12345678"}'
+
+## Leitura do sensor json
+
+curl --location --request GET 'http://177.104.61.121:1026/v2/entities/urn:ngsi-ld:Tempjson:001' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /'
+
+## Apagar um device
+
+curl --location --request DELETE 'http://177.104.61.121:4042/iot/devices/dht22' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--data-raw ''
