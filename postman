@@ -62,3 +62,154 @@ curl --location --request DELETE 'http://177.104.61.121:4042/iot/devices/dht22' 
 --header 'fiware-service: openiot' \
 --header 'fiware-servicepath: /' \
 --data-raw ''
+
+
+## XML
+
+curl --location --request GET 'http://177.104.61.121:4041/iot/about'
+
+## Serviço de grupo XML
+
+curl --location --request POST 'http://177.104.61.121:4041/iot/services' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+ "services": [
+   {
+     "apikey":      "4jggokgpepnvsb2uv4s40d59ov",
+     "cbroker":     "http://orion:1026",
+     "entity_type": "Thing",
+     "resource":    "/iot/xml"
+   }
+ ]
+}'
+
+## Criando um device XML
+
+curl --location --request POST 'http://177.104.61.121:4041/iot/devices' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+ "devices": [
+   {
+     "device_id":   "dht22",
+     "entity_name": "urn:ngsd-ld:Tempxml:001",
+     "entity_type": "Thing",
+     "timezone":    "America/Sao_Paulo",
+     "attributes": [
+       { "object_id": "t", "name":"temp", "type":"Number"},
+       { "object_id": "ti", "name":"tipoIdentificado", "type":"Text"},
+       { "object_id": "ts", "name":"timestamp", "type":"Number"}
+      ]
+   }
+ ]
+}
+'
+
+## Dummy device XML
+
+curl --location --request POST 'http://177.104.61.121:7896/iot/xml' \
+--header 'Content-Type: application/xml' \
+--data-raw '<measure device="dht22" key="4jggokgpepnvsb2uv4s40d59ov"><t value="17.98" /><ti value = "XML" /><ts value = "987654321" /></measure>'
+
+## Read the sensor XML
+
+curl --location --request GET 'http://177.104.61.121:1026/v2/entities/urn:ngsd-ld:Tempxml:001' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /'
+
+## Lista todos os devices provisionados
+
+curl --location --request GET 'http://177.104.61.121:4041/iot/devices' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /'
+
+## GET UL
+curl --location --request GET 'http://177.104.61.121:4043/iot/about'
+
+## Create a service Group UL
+curl --location --request POST 'http://177.104.61.121:4043/iot/services' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+ "services": [
+   {
+     "apikey":      "4jggokgpepnvsb2uv4s40d59ov",
+     "cbroker":     "http://orion:1026",
+     "entity_type": "Thing",
+     "resource":    "/iot/d",
+     "trust": "08ca25ba8ea0f322f50244c413fce2e32feed43d"
+   }
+ ]
+}'
+
+## Provisionando um sensor UL
+curl --location --request POST 'http://177.104.61.121:4043/iot/devices' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+ "devices": [
+   {
+     "device_id":   "dht22",
+     "entity_name": "urn:ngsi-ld:Tempul:001",
+     "entity_type": "Thing",
+     "timezone":    "America/Sao_Paulo",
+     "attributes": [
+       { "object_id": "t", "name":"temp", "type":"Number"},
+       { "object_id": "ti", "name":"ti", "type":"Text"},
+       { "object_id": "ts", "name":"timestamp", "type":"Number"}
+      ]
+   }
+ ]
+}
+'
+
+## Dummy device UL
+curl --location --request POST 'http://177.104.61.121:7898/iot/d?k=4jggokgpepnvsb2uv4s40d59ov&i=dht22' \
+--header 'Content-Type: text/plain' \
+--data-raw 't|16|ti|UL|ts|05091981'
+
+## Lista todos os dispositivos
+curl --location --request GET 'http://177.104.61.121:4043/iot/devices' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /'
+
+## Deleta todos os dispositivos
+curl --location --request DELETE 'http://177.104.61.121:4043/iot/devices/dht22' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--data-raw ''
+
+## GET LoRa
+curl --location --request GET 'http://177.104.61.121:3456'
+
+## Provisionar um device LoRa
+curl --location --request POST 'http://177.104.61.121:3456/iot/devices' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+ "devices": [
+   {
+     "device_id":   "device",
+     "entity_name": "urn:ngsi-ld:Templora:001",
+     "entity_type": "LoRaSensor",
+     "attributes": [
+      { "object_id": "ts", "name": "timestamp",  "type": "Number" },
+       { "object_id": "ti", "name": "tipoIdentificado",  "type": "Text" },
+       { "object_id": "ts", "name": "timestamp",  "type": "Text" }
+     ],
+
+       "dev_eui": "221597e4529df57d",
+	   "application_id": "5",
+	   "broker_address":"177.104.61.121:1883",
+	   "orion_address": "177.104.61.121"
+
+   }
+ ]
+}
+'
