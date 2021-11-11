@@ -46,7 +46,7 @@ curl --location --request POST 'http://177.104.61.121:4042/iot/devices' \
 '
 ## Dummy device
 
-curl --location --request POST 'http://177.104.61.121:7897/iot/json?k=4jggokgpepnvsb2uv4s40d59ov&i=dht22j' \
+curl --location --request POST 'http://177.104.61.121:7897/iot/json?k=4jggokgpepnvsb2uv4s40d59ov&i=dht22' \
 --header 'Content-Type: application/json' \
 --data-raw '{"t": "20","ti":"JSON", "ts":"12345678"}'
 
