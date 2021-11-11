@@ -244,3 +244,31 @@ curl --location --request POST 'http://177.104.61.121:1026/v2/subscriptions/' \
     "metadata": ["dateCreated", "dateModified"]
   }
 }'
+
+
+curl --location --request POST 'http://177.104.61.121:1026/v2/subscriptions/' \
+--header 'Content-Type: application/json' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--data-raw '{
+  "description": "Notify QuantumLeap of all Temperature Sensor changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": ".*"
+      }
+      ],
+      "condition": {
+			"attrs": [
+				"timestamp"
+			]
+		}
+
+  },
+  "notification": {
+    "http": {
+      "url": "http://177.104.61.121:8668/v2/notify"
+    },
+    "metadata": ["dateCreated", "dateModified"]
+  }
+}'
