@@ -173,6 +173,11 @@ obs.: Não se esqueça de retirar os espaços entre a barra e as aspas duplas
 
 mosquitto_pub -h 177.104.61.27 -t "application/5/device/221597e4529df57d/rx" -m "{\ "applicationID\ ":\ "5\ ",\ "applicationName\ ":\ "application\ ",\ "deviceName\ ":\ "device\ ",\ "devEUI\ ":\ "221597e4529df57d\ ",\ "txInfo\ ":{\ "frequency\ ":868300000,\ "dr\ ":1},\ "adr\ ":false,\ "fCnt\ ":0,\ "fPort\ ":1,\ "data\ ":\ "dHN8MTYyMjAzOTA1MDY4MQ==\ "}"
 
+mosquitto_sub -t "#" -h "177.104.61.121"
+mosquitto_pub -h localhost -t test -m "hello world"
+mosquitto_sub -h localhost -t test
+
+
 3) Verificar os logs no frontend do Heliot ou no MongoDB Compass.
 
 
