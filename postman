@@ -272,3 +272,27 @@ curl --location --request POST 'http://177.104.61.121:1026/v2/subscriptions/' \
     "metadata": ["dateCreated", "dateModified"]
   }
 }'
+
+{
+  "description": "Notify Node API of all Temperature Sensor changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": ".*"
+      }
+      ],
+      "condition": {
+			"attrs": [
+				"timestamp"
+			]
+		}
+
+  },
+  "notification": {
+    "http": {
+      "url": "http://177.104.61.121:8081/api"
+    },
+    "attrs": ["timestamp"],
+    "metadata": ["dateCreated", "dateModified"]
+  }
+}
