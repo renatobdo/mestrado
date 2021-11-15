@@ -13,7 +13,7 @@ Front end:
 
 * Angular: https://www.javaguides.net/2020/06/free-spring-boot-angular-open-source-projects-github.html
 
-* Nodejs
+* Nodejs: https://www.youtube.com/watch?v=q-lUgFxwjEM
 
 Back end:
 
@@ -180,6 +180,8 @@ mosquitto_sub -h localhost -t test
 
 3) Verificar os logs no frontend do Heliot ou no MongoDB Compass.
 
-
+4) API para visualizar os dados notificados no ORION:
+http://177.104.61.121:8080/ 
+docker run -d -p 8080:3000 renatobdo/mestrado:api
 
 
