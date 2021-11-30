@@ -1,0 +1,70 @@
+//Para contar a quantidade de mensagens xml
+=CONT.SE(A1:A5185;"=1")
+
+//Para contar a quantidade de mensagens html
+=CONT.SE(A1:A5185;"=2")
+
+//Para contar a quantidade de mensagens json
+=CONT.SE(A1:A5185;"=3")
+
+//Para contar a quantidade de mensagens ul
+=CONT.SE(A1:A5185;"=4")
+
+//Para contar a quantidade de mensagens indefinido
+=CONT.SE(A1:A5185;"=5")
+
+//Para contar a quantidade de mensagens LoRa
+=CONT.SE(A1:A5185;"=6")
+
+//Para contar a quantidade de mensagens Teros12
+=CONT.SE(A1:A5185;"=7")
+
+
+//Tempo de parsing
+xml:
+=SOMASE(A1:A5185;"=1";E1:E5185)/A5191
+
+html:
+=SOMASE(A1:A5185;"=2";E1:E5185)/A5192
+
+json:
+=SOMASE(A1:A5185;"=3";E1:E5185)/A5193
+
+ul:
+=SOMASE(A1:A5185;"=4";E1:E5185)/A5194
+
+indefinido
+=SOMASE(A1:A5185;"=5";E1:E5185)/A5195
+
+LoRa
+=SOMASE(A1:A5185;"=6";E1:E5185)/A5196
+
+Teros
+=SOMASE(A1:A5185;"=7";E1:E5185)/A5197
+
+//Quantidade de Bytes
+xml:
+=SOMASE(A1:A5185;"=1";F1:F5185)/A5191
+
+html:
+=SOMASE(A1:A5185;"=2";F1:F5185)/A5192
+
+json:
+=SOMASE(A1:A5185;"=3";F1:F5185)/A5193
+
+ul:
+=SOMASE(A1:A5185;"=4";F1:F5185)/A5194
+
+Indefinido
+=SOMASE(A1:A5185;"=5";F1:F5185)/A5195
+
+LoRa
+=SOMASE(A1:A5185;"=6";F1:F5185)/A5196
+
+Teros
+=SOMASE(A1:A5185;"=7";F1:F5185)/A5197
+
+
+
+
+
