@@ -1,0 +1,4 @@
+
+** CrateDB:
+//Conta a quantidade de registros que tenham json no campo entity_id
+SELECT count(*) FROM "mtopeniot"."etthing" Where entity_id like '%json%' limit 100;
