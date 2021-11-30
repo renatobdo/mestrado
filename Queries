@@ -2,3 +2,59 @@
 ** CrateDB:
 //Conta a quantidade de registros que tenham json no campo entity_id
 SELECT count(*) FROM "mtopeniot"."etthing" Where entity_id like '%json%' limit 100;
+
+
+** MongoDB:
+
+Db Compass
+//seleciona tudo que contenha <measure 
+// Like '<measure%'
+{payload: /^<measure/}
+
+//Na linha de comando:
+db.AgentLog.find({"contentype":"1"}).count();
+db.AgentLog.find({contentype:"1", payload:/^<measure/}).count();
+
+db.AgentLog.find({"description":/07.07/, "contentype":/1/})
+//
+
+//Procura por content type = 2 e que contenha <!DOCTYPE html
+db.AgentLog.find({"contentype":"2"}).count();
+db.AgentLog.find({contentype:"2", payload:/^<!DOCTYPE html/}).count();
+
+
+//Procura por content type = 3 e que contenha {t:
+{payload: /^{t:/}
+db.AgentLog.find({"contentype":"3"}).count();
+{contentype:"3", payload: /^{t/}
+
+//Procura por content type = 4 e que contenha |t:
+{contentype:"4", payload: /^t/}
+db.AgentLog.find({"contentype":"4"}).count();
+
+db.AgentLog.find({"contentype":"4", payload:/^t/}).count();
+
+
+// Conta todos os dados aleatórios
+db.AgentLog.find({"contentype":"5"}).count();
+//somar os dados aleatórios que vem somente do LoRa, o resto são dados aleatórios de outros tipos:
+Executar esse comando no MongoDB Compass porque na linha de comando não funcionou:
+{contentype:"5", payload:/^{phyPayload:/}
+{contentype:"5", payload:/^{token:/}
+db.AgentLog.find({contentype:"5", payload:/token:/}).count();
+
+
+// Conta todos os dados do tipo LoRa
+db.AgentLog.find({"contentype":"6"}).count();
+db.AgentLog.find({contentype:"6", payload:/applicationID:/}).count();
+//verifica se tem algum dado vindo do LoRa incorreto:
+db.AgentLog.find({contentype:"6", payload:/phyPayload:/}).count();
+
+
+Contanto a quantidade de cada tipo de dado:
+
+db.AgentLog.find({"contentype":"1"}).count();
+db.AgentLog.find({"contentype":"2"}).count();
+db.AgentLog.find({"contentype":"3"}).count();
+db.AgentLog.find({"contentype":"4"}).count();
+db.AgentLog.find({"contentype":"5"}).count();
