@@ -106,27 +106,6 @@ curl --location --request POST 'http://177.104.61.121:4041/iot/devices' \
  ]
 }
 '
-//*****Substitui o código abaixo pelo código acima
-curl --location --request POST 'http://177.104.61.121:4041/iot/devices' \
---header 'fiware-service: openiot' \
---header 'fiware-servicepath: /' \
---header 'Content-Type: application/json' \
---data-raw '{
- "devices": [
-   {
-     "device_id":   "dht22",
-     "entity_name": "urn:ngsd-ld:Tempxml:001",
-     "entity_type": "Thing",
-     "timezone":    "America/Sao_Paulo",
-     "attributes": [
-       { "object_id": "t", "name":"temp", "type":"Number"},
-       { "object_id": "ti", "name":"tipoIdentificado", "type":"Text"},
-       { "object_id": "ts", "name":"timestamp", "type":"Number"}
-      ]
-   }
- ]
-}
-'
 
 ## Dummy device XML
 
@@ -181,12 +160,13 @@ curl --location --request POST 'http://177.104.61.121:4043/iot/devices' \
      "attributes": [
        { "object_id": "t", "name":"temp", "type":"Number"},
        { "object_id": "ti", "name":"ti", "type":"Text"},
-       { "object_id": "ts", "name":"timestamp", "type":"Number"}
+       { "object_id": "ts", "name":"ts", "type":"Number"}
       ]
    }
  ]
 }
 '
+
 
 ## Dummy device UL
 curl --location --request POST 'http://177.104.61.121:7898/iot/d?k=4jggokgpepnvsb2uv4s40d59ov&i=dht22' \
@@ -208,6 +188,7 @@ curl --location --request DELETE 'http://177.104.61.121:4043/iot/devices/dht22' 
 curl --location --request GET 'http://177.104.61.121:3456'
 
 ## Provisionar um device LoRa
+
 curl --location --request POST 'http://177.104.61.121:3456/iot/devices' \
 --header 'fiware-service: openiot' \
 --header 'fiware-servicepath: /' \
@@ -221,7 +202,7 @@ curl --location --request POST 'http://177.104.61.121:3456/iot/devices' \
      "attributes": [
       { "object_id": "ts", "name": "timestamp",  "type": "Number" },
        { "object_id": "ti", "name": "tipoIdentificado",  "type": "Text" },
-       { "object_id": "ts", "name": "timestamp",  "type": "Text" }
+       { "object_id": "ts", "name": "ts",  "type": "Number" }
      ],
 
        "dev_eui": "221597e4529df57d",
@@ -233,6 +214,7 @@ curl --location --request POST 'http://177.104.61.121:3456/iot/devices' \
  ]
 }
 '
+
 
 ## Subscribe GET
 curl --location --request GET 'http://177.104.61.121:5080/v1/version'
