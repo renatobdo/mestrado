@@ -14,6 +14,7 @@ Front end:
 * Angular: https://www.javaguides.net/2020/06/free-spring-boot-angular-open-source-projects-github.html
 
 * Nodejs: https://www.youtube.com/watch?v=q-lUgFxwjEM
+* http://177.104.61.121:8081/
 
 Back end:
 
