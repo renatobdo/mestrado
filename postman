@@ -86,7 +86,27 @@ curl --location --request POST 'http://177.104.61.121:4041/iot/services' \
 }'
 
 ## Criando um device XML
-
+curl --location --request POST 'http://177.104.61.121:4041/iot/devices' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+ "devices": [
+   {
+     "device_id":   "dht22",
+     "entity_name": "urn:ngsd-ld:Tempxml:001",
+     "entity_type": "Thing",
+     "timezone":    "America/Sao_Paulo",
+     "attributes": [
+       { "object_id": "t", "name":"temp", "type":"Number"},
+       { "object_id": "ti", "name":"tipoIdentificado", "type":"Text"},
+       { "object_id": "ts", "name":"ts", "type":"Number"}
+      ]
+   }
+ ]
+}
+'
+//*****Substitui o código abaixo pelo código acima
 curl --location --request POST 'http://177.104.61.121:4041/iot/devices' \
 --header 'fiware-service: openiot' \
 --header 'fiware-servicepath: /' \
