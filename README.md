@@ -36,7 +36,7 @@ Banco de dados:
 https://www.mongodb.com/products/compass
 
 * CrateDB
-http://177.104.61.27:4200/
+http://177.104.61.121:4200/
 https://crate.io/docs/crate/tutorials/en/latest/generate-time-series/cli.html
 
 IDE
