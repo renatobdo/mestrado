@@ -5,19 +5,23 @@ Cenário 1 - Caso de testes 3	(CT3)
 ## Descrição do teste
 Simular o envio de 5000 sensores aleatórios com os tipos de dados (content-types) : XML, JSON, UL, HTML, dado aleatório, LoRa, Teros12. 
 
-## descrição: 
-Com intervalo de tempo entre cada envio de 3 segundos.	"1) Analisar o tempo de parsing/ filtro do algoritmo para cada content type;
-
 ## propósito:
+Com intervalo de tempo entre cada envio de 3 segundos.	
+1) Analisar o tempo de parsing/ filtro do algoritmo para cada content type;
 2) Obter a vazão ou a quantidade de Bits/s na saída do redirecionador
-3) Analisar o comportamento do redirecionador com carga de sensores maior em menor tempo"	Tempo de parsing, 
-utilização de cpu, utilização de memória, vazão	variedade, volume e velocidade	
+3) Analisar o comportamento do redirecionador com carga de sensores maior em menor tempo
+
+## métricas
+- Tempo de parsing, 
+- utilização de cpu, 
+- utilização de memória, 
+- vazão	variedade, volume e velocidade	
 
 ## duração
 10 min	
 
 ## resultado esperado
-"1) Tempo de parsing para cada content type;
+1) Tempo de parsing para cada content type;
 2) vazão na saída do redirecionador em bits/s
 3) Utilização de cpu e memória 
 
