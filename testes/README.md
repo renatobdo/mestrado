@@ -2,6 +2,13 @@
 
 Simular o envio de mensagens aleatórias com os tipos de dados (content-types) : XML, JSON, UL, HTML, indefinido, LoRa, Teros12. Receber essas mensagens em um algoritmo capaz de analisar o payload e enviá-lo para um agente (IoT Agent) responsável por gerenciar essas mensagens 
 
+# Cenário dos testes
+
+https://docs.google.com/spreadsheets/d/1NVP1pvPBCw29xQ5PDzMr0tMPG5Xhfww95qH1ZccwvqY/edit?usp=sharing
+
+https://docs.google.com/spreadsheets/d/105WulcEI_N9G7DqwXDJvnhXg6a3PEYmjO1qWytULM5Q/edit#gid=0
+
+
 # Arquitetura dos testes
 
 ![Defesa-Orquestrador-Final](https://user-images.githubusercontent.com/9336800/144167743-fa0f7c65-8feb-449f-9a88-e8bce570cbba.jpg)
