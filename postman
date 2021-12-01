@@ -298,3 +298,112 @@ curl --location --request POST 'http://177.104.61.121:1026/v2/subscriptions/' \
     "metadata": ["dateCreated", "dateModified"]
   }
 }
+
+//Funcionou XML:
+curl --location --request POST 'http://177.104.61.121:1026/v2/subscriptions/' \
+--header 'Content-Type: application/json' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--data-raw '{
+  "description": "Notify Quantum Leap of all XML Temperature changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "urn:ngsd-ld:Tempxml:001"
+      }
+    ],
+      "condition": {
+			"attrs": [
+				"ts"
+			]
+		}
+  },
+  "notification": {
+    "http": {
+      "url": "http://177.104.61.121:8668/v2/notify"
+    }
+  }
+ 
+}'
+//JSON
+curl --location --request POST 'http://177.104.61.121:1026/v2/subscriptions/' \
+--header 'Content-Type: application/json' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--data-raw '{
+  "description": "Notify QuantumLeap of all JSON Temperature Sensor changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "urn:ngsi-ld:Tempjson:001"
+      }
+      ],
+      "condition": {
+			"attrs": [
+				"ts"
+			]
+		}
+
+  },
+  "notification": {
+    "http": {
+      "url": "http://177.104.61.121:8668/v2/notify"
+    },
+    "attrs": [
+      "t", "ts"
+    ]
+
+  }
+}'
+//UL
+curl --location --request POST 'http://177.104.61.121:1026/v2/subscriptions/' \
+--header 'Content-Type: application/json' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--data-raw '{
+  "description": "Notify Quantum Leap of all UL Temperature changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "urn:ngsi-ld:Tempul:001"
+      }
+    ],
+      "condition": {
+			"attrs": [
+				"ts"
+			]
+		}
+  },
+  "notification": {
+    "http": {
+      "url": "http://177.104.61.121:8668/v2/notify"
+    }
+  }
+ 
+}'
+
+//LoRa
+curl --location --request POST 'http://177.104.61.121:3456/iot/devices' \
+--header 'fiware-service: openiot' \
+--header 'fiware-servicepath: /' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+ "devices": [
+   {
+     "device_id":   "device",
+     "entity_name": "urn:ngsi-ld:Templora:001",
+     "entity_type": "LoRaSensor",
+     "attributes": [
+      { "object_id": "ts", "name": "timestamp",  "type": "Number" },
+       { "object_id": "ti", "name": "tipoIdentificado",  "type": "Text" }
+     ],
+
+       "dev_eui": "221597e4529df57d",
+	   "application_id": "5",
+	   "broker_address":"177.104.61.121:1883",
+	   "orion_address": "177.104.61.121"
+
+   }
+ ]
+}
+'
