@@ -26,15 +26,9 @@ Com intervalo de tempo entre cada envio de 3 segundos.
 3) Utilização de cpu e memória 
 
 ## Resultado obtido
-Qtd       Content type          tempoParsing        tamanhoBytes
-765        xml                  5,007843137            127
-697        html                 2,172166428            97
-728        json                 1,120879121            34
-739        ul                   0,886332882            30
-714        Indefinido           1,207282913            95,18207283
-759        LoRa                 1,048748353            303
-739        Teros                0,702300406            35
-5141
+
+abrir aba c1-ct3
+https://docs.google.com/spreadsheets/d/105WulcEI_N9G7DqwXDJvnhXg6a3PEYmjO1qWytULM5Q/edit#gid=926317124
 
 ## Comandos do SenSE:
 java -jar SenSE.jar -sensor 850 -rep 1 -time 600 - p 3 -h tcp://177.104.61.126:1883 -sensorType lora -temp -netkey 9c698235533b8865900aee3558dfc47b -appkey b73485bb9c5e29a2c8b6a330f0bf2ed3 -mac 000000ffff001000 -devAddress 00fb0bc1	"
