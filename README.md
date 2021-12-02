@@ -75,7 +75,8 @@ Sistemas Operacionais:
 
 # Arquitetura do sistema
 
-![ArquiteturaDosTestes](https://user-images.githubusercontent.com/9336800/122453049-4d9f9680-cf80-11eb-88ac-abeacc6a8611.png)
+![Defesa-Orquestrador-Final](https://user-images.githubusercontent.com/9336800/144475325-5d51fa09-592b-4647-9f77-f879e7f5d108.jpg)
+
 
 São utilizadas 4 máquinas virtuais:
 
