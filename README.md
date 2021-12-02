@@ -82,3 +82,8 @@ São utilizadas 4 máquinas virtuais:
 
 ![2021-12-02 (25)](https://user-images.githubusercontent.com/9336800/144474057-1c936918-f8dd-455f-8576-7152fce4a203.png)
 
+
+## Diagrama UML de classe do gerador de mensagens
+
+![RedirecionadorUML-UML](https://user-images.githubusercontent.com/9336800/144477559-e7dc43d9-5f26-4b92-a17c-1ba5c852e3e3.jpg)
+
