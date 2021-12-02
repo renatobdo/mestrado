@@ -6,9 +6,9 @@ Simular o envio de 3000 mensagens de sensores aleatórios com os tipos de dados 
 
 ## propósito:
 
-    Analisar o tempo de parsing/ filtro do algoritmo para cada content type;
-    Obter a vazão ou a quantidade de Bits/s na saída do redirecionador
-    Analisar o comportamento do redirecionador com carga de sensores maior em menor tempo. Com intervalo de tempo entre cada envio de 4 segundos.
+    - Analisar o tempo de parsing/ filtro do algoritmo para cada content type;
+    - Obter a vazão ou a quantidade de Bits/s na saída do redirecionador
+    - Analisar o comportamento do redirecionador com carga de sensores maior em menor tempo. Com intervalo de tempo entre cada envio de 4 segundos.
 
 ## métricas
 
