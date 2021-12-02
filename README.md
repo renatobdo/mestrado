@@ -42,7 +42,7 @@ https://crate.io/docs/crate/tutorials/en/latest/generate-time-series/cli.html
 
 IDE
 
-* Eclipse
+* Eclipse ou Visual Studio Code
 
 * Postman
 https://www.postman.com/
