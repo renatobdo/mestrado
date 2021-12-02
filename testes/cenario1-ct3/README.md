@@ -3,7 +3,7 @@ https://docs.google.com/spreadsheets/d/105WulcEI_N9G7DqwXDJvnhXg6a3PEYmjO1qWytUL
 Cenário 1 - Caso de testes 3	(CT3)
 
 ## Descrição do teste
-Simular o envio de 5000 sensores aleatórios com os tipos de dados (content-types) : XML, JSON, UL, HTML, dado aleatório, LoRa, Teros12. 
+Simular o envio de 5000 mensagens de sensores aleatórios com os tipos de dados (content-types) : XML, JSON, UL, HTML, dado aleatório, LoRa, Teros12. 
 
 ## propósito:
 Com intervalo de tempo entre cada envio de 3 segundos.	
