@@ -1,5 +1,3 @@
-https://docs.google.com/spreadsheets/d/105WulcEI_N9G7DqwXDJvnhXg6a3PEYmjO1qWytULM5Q/edit#gid=0
-
 Cenário 1 - Caso de testes 3	(CT3)
 
 ## Descrição do teste
