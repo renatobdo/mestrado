@@ -6,10 +6,6 @@ Simular o envio de mensagens aleatórias com os tipos de dados (content-types) :
 
 https://docs.google.com/spreadsheets/d/105WulcEI_N9G7DqwXDJvnhXg6a3PEYmjO1qWytULM5Q/edit#gid=0
 
-Antigo: https://docs.google.com/spreadsheets/d/1NVP1pvPBCw29xQ5PDzMr0tMPG5Xhfww95qH1ZccwvqY/edit?usp=sharing
-
-
-
 
 # Arquitetura dos testes
 
