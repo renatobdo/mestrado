@@ -82,16 +82,3 @@ São utilizadas 4 máquinas virtuais:
 ![2021-12-02 (25)](https://user-images.githubusercontent.com/9336800/144474057-1c936918-f8dd-455f-8576-7152fce4a203.png)
 
 
-docker-compose.yml está em https://github.com/renatobdo/heliot/blob/master/docker-compose.yml_vm1
-
-vm1: 177.104.61.126 em que está o servidor LoRA para geração de dados em formato base64
-
-docker-compose.yml https://github.com/renatobdo/heliot/blob/master/docker-compose.yml_vm3
-
-2 notebooks foram utilizados um com Ubuntu e outro com o Windows 10. No Ubuntu foi instalado o Node-Red e no Windows 10 o Iot Redirector e o Heliot.
-
-
-
-
-
-
