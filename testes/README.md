@@ -25,8 +25,13 @@ O SenSE[1] que também é um gerador de mensagens gera 1 tipo de content-type ba
 Repare que no campo data o conteúdo está em base 64. Quando decodificamos a mensagem obtemos: 
 ts|1638321666180|ti|lora
 
-Na saída do redirecionar é realizado a persistência em um arquivo csv de log. Essa saída é comparada com a mensagem que foi redirecionada para o IoT Agent e persistida tanto no CrateDB quanto no MongoDb. Isso é realizado pelo Quantum Leap e pela API, respectivamente. 
+Na saída do redirecionar é realizado a persistência em um arquivo csv de log. Essa saída é comparada com a mensagem que foi redirecionada para o IoT Agent[2] e persistida tanto no CrateDB quanto no MongoDb. Isso é realizado pelo Quantum Leap[3] e pela API, respectivamente. 
 
 ## Referências Bibliográficas
 
+
 [1]	C. K. Ivan Zyrianoff, Fabrizio Borelli, “SenSE – Sensor Simulation Environment: Uma ferramenta para geração de tráfego IoT em larga escala,” SBRC 2017 - Salão de Ferramentas, p. 9, 2017, [Online]. Available: https://www.researchgate.net/publication/316581014_SenSE_-_Sensor_Simulation_Environment_Uma_ferramenta_para_geracao_de_trafego_IoT_em_larga_escala
+
+[2]	“What is an IoT Agent?” https://fiware-tutorials.readthedocs.io/en/stable/iot-agent/ (accessed Oct. 18, 2021).
+
+[3]	“FIWARE Querying Time Series Data (QuantumLeap).” https://documenter.getpostman.com/view/513743/RWEnkvDc (accessed Dec. 01, 2021).
