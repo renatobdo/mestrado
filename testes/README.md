@@ -27,6 +27,13 @@ ts|1638321666180|ti|lora
 
 Na saída do redirecionar é realizado a persistência em um arquivo csv de log. Essa saída é comparada com a mensagem que foi redirecionada para o IoT Agent[2] e persistida tanto no CrateDB quanto no MongoDb. Isso é realizado pelo Quantum Leap[3] e pela API, respectivamente. 
 
+
+## Infraestrutura utilizada
+
+
+
+
+
 ## Referências Bibliográficas
 
 
